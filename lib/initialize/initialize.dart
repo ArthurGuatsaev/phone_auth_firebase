@@ -1,0 +1,27 @@
+import 'dart:developer';
+import 'dart:async';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_regist/account/data/user_repository.dart';
+import 'package:firebase_regist/account/domain/bloc/user_bloc.dart';
+import 'package:firebase_regist/account/domain/model/user_model.dart';
+import 'package:firebase_regist/account/domain/repositories/user_repository.dart';
+import 'package:firebase_regist/auth/data/repositories/freez/freez_repository.dart';
+import 'package:firebase_regist/auth/domain/blocs/base_auth/base_auth_bloc.dart';
+import 'package:firebase_regist/auth/domain/repositories/base_repository.dart';
+import 'package:firebase_regist/home/import.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:isar/isar.dart';
+import 'package:path_provider/path_provider.dart';
+
+import '../../themes/theme.dart';
+import '../auth/data/repositories/local_repositories/isar_auth.dart/isar_auth.dart';
+import '../auth/data/repositories/phone_repositories/firebase/firebase_phone_repository.dart';
+import '../auth/domain/model/user_isar.dart';
+import '../firebase_options.dart';
+import '../navigation/router.dart';
+part 'domain/dependencies.dart';
+part 'domain/initialize.dart';
+part 'domain/repo.dart';
+part 'view/home_app.dart';
+part 'view/loading_app.dart';

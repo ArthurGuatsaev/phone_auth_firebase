@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "992766496792",
+    "firebase_url": "https://taxi-test-37094-default-rtdb.firebaseio.com",
+    "project_id": "taxi-test-37094",
+    "storage_bucket": "taxi-test-37094.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992766496792:android:d251d1af230f8fe49c336d",
+        "android_client_info": {
+          "package_name": "com.example.firebase_regist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992766496792-ac5090p7djhlajrdepijqkq03v9bq2tf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHwNDIujjzA8F_LdiKENGzfiH010IFdAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992766496792-ac5090p7djhlajrdepijqkq03v9bq2tf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "992766496792-3kgmcrr4m3jieji22mpjnmks4foiul3j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterTaxiProject"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992766496792:android:94bfc2f67d8987369c336d",
+        "android_client_info": {
+          "package_name": "com.example.flutter_taxi_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992766496792-ac5090p7djhlajrdepijqkq03v9bq2tf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHwNDIujjzA8F_LdiKENGzfiH010IFdAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992766496792-ac5090p7djhlajrdepijqkq03v9bq2tf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "992766496792-3kgmcrr4m3jieji22mpjnmks4foiul3j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterTaxiProject"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
