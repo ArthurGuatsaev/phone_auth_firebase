@@ -29,13 +29,18 @@ class FirebasePhoneAuth extends AuthRepository {
   }
 
   Future<void> codeSent(String verificationId, int? resendToken) async {
-    kodController?.stream.listen((event) async {
-      PhoneAuthCredential credential = PhoneAuthProvider.credential(
-          verificationId: verificationId, smsCode: event);
-      await firebase.signInWithCredential(credential);
-      userController.add({'userId': credential.verificationId});
-      log('send user');
-    });
+    try {
+      kodController?.stream.listen((event) async {
+        PhoneAuthCredential credential = PhoneAuthProvider.credential(
+            verificationId: verificationId, smsCode: event);
+        await firebase.signInWithCredential(credential);
+        userController.add({'userId': credential.verificationId});
+        log('send user');
+      });
+    } catch (e) {
+      // здесь будет обработка исключений firebase, для экономии времени не реализую
+      log(e.toString());
+    }
   }
 
   @override

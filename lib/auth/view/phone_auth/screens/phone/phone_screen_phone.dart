@@ -46,7 +46,7 @@ class _PhoneScreenPhoneState extends State<PhoneScreenPhone> {
                           pController: _pageController,
                         );
                       case 1:
-                        return const OTFScreen();
+                        return OTFScreen(controller: _controller);
                       default:
                         return const SizedBox();
                     }

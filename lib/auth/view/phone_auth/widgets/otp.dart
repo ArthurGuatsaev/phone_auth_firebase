@@ -6,7 +6,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pinput/pinput.dart';
 
 class OTFScreen extends StatelessWidget {
-  const OTFScreen({super.key});
+  final TextEditingController? controller;
+  const OTFScreen({super.key, this.controller});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class OTFScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 40),
           child: Center(
             child: Text(
-                'Введите код, который мы отправили в SMS на +7(966) 666 66 66',
+                'Введите код, который мы отправили в SMS на ${controller?.text}',
                 textAlign: TextAlign.center,
                 style: context.text.rgBody),
           ),
@@ -41,7 +42,7 @@ class OTFScreen extends StatelessWidget {
               }),
         ),
         const SizedBox(height: 20),
-        const TimerCod(timer: 60),
+        const Center(child: TimerCod(timer: 60)),
       ],
     );
   }
